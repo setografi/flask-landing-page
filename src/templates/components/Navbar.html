@@ -1,34 +1,108 @@
-<header class="w-4/5 mx-auto py-6 flex justify-between items-center">
-  <!-- Brand name -->
-  <div>
-    <h1 class="text-2xl text-gray-800 font-bold">Vacarion</h1>
+<header class="w-4/5 mx-auto py-6 flex flex-col items-center">
+  <div class="w-full mx-auto flex justify-between items-center">
+    <!-- Brand name -->
+    <div>
+      <h1 class="text-2xl text-gray-800 font-bold">Vacarion</h1>
+    </div>
+
+    <!-- menu -->
+    <div class="hidden lg:block">
+      <ul class="flex">
+        <li class="mx-4">
+          <a
+            href="#"
+            class="font-medium text-gray-500 cursor-pointer hover:underline hover:text-gray-700"
+            >Home</a
+          >
+        </li>
+        <li class="mx-4">
+          <a
+            href="#trip-planner"
+            class="font-medium text-gray-500 cursor-pointer hover:underline hover:text-gray-700"
+            >Trip Planner</a
+          >
+        </li>
+        <li class="mx-4">
+          <a
+            href="#blogs"
+            class="font-medium text-gray-500 cursor-pointer hover:underline hover:text-gray-700"
+            >Blogs</a
+          >
+        </li>
+        <li class="mx-4">
+          <a
+            href="#categories"
+            class="font-medium text-gray-500 cursor-pointer hover:underline hover:text-gray-700"
+            >Categories</a
+          >
+        </li>
+        <li class="mx-4">
+          <a
+            href="#stories"
+            class="font-medium text-gray-500 cursor-pointer hover:underline hover:text-gray-700"
+            >Stories</a
+          >
+        </li>
+        <li class="mx-4">
+          <a
+            href="#contact"
+            class="font-medium text-gray-500 cursor-pointer hover:underline hover:text-gray-700"
+            >Contact</a
+          >
+        </li>
+        <li class="mx-4 cursor-pointer">
+          <span class="font-light text-gray-500">
+            <i
+              data-feather="search"
+              class="text-gray-400 hover:text-gray-700"
+            ></i>
+          </span>
+        </li>
+      </ul>
+    </div>
+
+    <button class="block lg:hidden" id="menuButton">
+      <i data-feather="menu" class="text-gray-400 hover:text-gray-700"></i>
+    </button>
   </div>
 
-  <!-- menu -->
-  <div>
-    <ul class="flex">
-      <li class="mx-4">
-        <span class="font-bold text-gray-700">Home</span>
+  <div class="hidden lg:hidden w-full mt-6" id="mobileMenu">
+    <ul class="flex flex-col items-start">
+      <li
+        class="flex items-center w-full text-start px-4 duration-300 transition hover:bg-blue-400 hover:bg-opacity-30"
+      >
+        <i data-feather="home" class="text-gray-700"></i>
+        <a href="#" class="block p-4 text-gray-700"> Home </a>
       </li>
-      <li class="mx-4">
-        <span class="font-medium text-gray-500">Trip Planner</span>
+      <li
+        class="flex items-center w-full text-start px-4 duration-300 transition hover:bg-blue-400 hover:bg-opacity-30"
+      >
+        <i data-feather="search" class="text-gray-700"></i>
+        <a href="#" class="block p-4"> Trip Planner </a>
       </li>
-      <li class="mx-4">
-        <span class="font-medium text-gray-500">Blogs</span>
+      <li
+        class="flex items-center w-full text-start px-4 duration-300 transition hover:bg-blue-400 hover:bg-opacity-30"
+      >
+        <i data-feather="edit-2" class="text-gray-700"></i>
+        <a href="#" class="block p-4"> Blogs </a>
       </li>
-      <li class="mx-4">
-        <span class="font-medium text-gray-500">Categories</span>
+      <li
+        class="flex items-center w-full text-start px-4 duration-300 transition hover:bg-blue-400 hover:bg-opacity-30"
+      >
+        <i data-feather="list" class="text-gray-700"></i>
+        <a href="#" class="block p-4"> Categories </a>
       </li>
-      <li class="mx-4">
-        <span class="font-medium text-gray-500">Stories</span>
+      <li
+        class="flex items-center w-full text-start px-4 duration-300 transition hover:bg-blue-400 hover:bg-opacity-30"
+      >
+        <i data-feather="users" class="text-gray-700"></i>
+        <a href="#" class="block p-4"> Stories </a>
       </li>
-      <li class="mx-4">
-        <span class="font-medium text-gray-500">Contact</span>
-      </li>
-      <li class="mx-4">
-        <span class="font-light text-gray-500">
-          <i data-feather="search" class="text-gray-400"></i>
-        </span>
+      <li
+        class="flex items-center w-full text-start px-4 duration-300 transition hover:bg-blue-400 hover:bg-opacity-30"
+      >
+        <i data-feather="mail" class="text-gray-700"></i>
+        <a href="#" class="block p-4"> Contact </a>
       </li>
     </ul>
   </div>

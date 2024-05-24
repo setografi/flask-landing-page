@@ -15,7 +15,7 @@
     <!-- Navbar -->
     {% include 'components/Navbar.html' %}
 
-    <main>
+    <main id="mainSection">
       <!-- Hero Section -->
       {% include 'components/HeroSection.html' %}
 
@@ -37,5 +37,10 @@
 
     <!-- Footer -->
     {% include 'components/Footer.html' %}
+
+    <script>
+      feather.replace();
+    </script>
+    <script src="/static/js/script.js"></script>
   </body>
 </html>
