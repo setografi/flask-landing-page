@@ -3,4 +3,4 @@ from src import app
 
 @app.route('/')
 def home():
-    return render_template('index.html', title="SORE")
+    return render_template('index.html', title="Vacation Site")

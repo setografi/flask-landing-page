@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 
 * {
   box-sizing: border-box;
@@ -7,5 +7,61 @@
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Raleway", sans-serif;
+}
+
+.hero {
+  background: url("/static/images/beach-bg.jpg") no-repeat;
+  height: 500px;
+  width: 100%;
+  background-size: cover;
+}
+
+.floating-sub-hero {
+  bottom: -7%;
+  left: 10%;
+}
+
+.text-xxs {
+  font-size: 9px;
+}
+.dollar-sign {
+  top: 11px;
+  left: 11px;
+}
+.fill-blue {
+  fill: #3182ce;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.tour-card .image-section {
+  width: 200px;
+  height: 250px;
+}
+
+.slideshow .card {
+  width: 24%;
+  height: 300px;
+}
+.slideshow .card .overlay-text {
+  bottom: 20px;
+}
+.slideshow .card img {
+  object-fit: cover;
+  width: 100%;
+  filter: brightness(50%);
+}
+
+.travel-stories {
+  background: url("/static/images/stories-bg.jpg") no-repeat;
+  background-size: cover;
+  height: 550px;
+}
+
+#footer {
+  background-color: #13283a;
 }
