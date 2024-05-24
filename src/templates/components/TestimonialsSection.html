@@ -1,8 +1,19 @@
 <div class="mt-32" id="contact">
   <section class="w-4/5 flex flex-col md:flex-row mx-auto">
-    <div class="w-full md:w-1/3 px-3">
+    <div class="w-full md:w-1/3 px-4 block md:hidden">
+      <!-- Header and arrow buttons -->
+      <div>
+        <h2 class="text-4xl font-hairline text-gray-700">
+          What people <br />
+          says
+        </h2>
+        <div class="h-1 bg-gray-300 w-10 mt-2"></div>
+      </div>
+    </div>
+
+    <div class="w-full md:w-1/3 px-3 mb-4 md:mb-0">
       <!-- Review text and rating -->
-      <div class="flex justify-end mb-4">
+      <div class="flex justify-start md:justify-end mb-4 mt-4 md:mt-0">
         <i data-feather="star" class="h-3 fill-blue mr-1 text-blue-600 w-3"></i>
         <i data-feather="star" class="h-3 fill-blue mr-1 text-blue-600 w-3"></i>
         <i data-feather="star" class="h-3 fill-blue mr-1 text-blue-600 w-3"></i>
@@ -16,14 +27,17 @@
         numquam totam?
       </p>
       <div class="mt-3">
-        <p class="text-sm font-hairline text-right">Barry Underwood</p>
+        <p class="text-sm font-hairline text-left md:text-right">
+          Barry Underwood
+        </p>
         <p
-          class="text-xs text-gray-400 uppercase font-semibold mt-1 text-right"
+          class="text-xs text-gray-400 uppercase font-semibold mt-1 text-left md:text-right"
         >
           Traveler
         </p>
       </div>
     </div>
+
     <div class="w-full md:w-1/3 px-4 flex justify-center">
       <!-- User photo -->
       <img
@@ -34,7 +48,7 @@
     </div>
     <div class="w-full md:w-1/3 px-4">
       <!-- Header and arrow buttons -->
-      <div>
+      <div class="hidden md:block">
         <h2 class="text-4xl font-hairline text-gray-700">
           What people <br />
           says
