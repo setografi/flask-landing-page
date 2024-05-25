@@ -20,29 +20,29 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
-document.addEventListener("DOMContentLoaded", function () {
-  const slider = document.querySelectorAll(".card");
-  const prevBtn = document.getElementById("prevBtn");
-  const nextBtn = document.getElementById("nextBtn");
-  let currentIndex = 0;
+// document.addEventListener("DOMContentLoaded", function () {
+//   const slider = document.querySelectorAll(".card");
+//   const prevBtn = document.getElementById("prevBtn");
+//   const nextBtn = document.getElementById("nextBtn");
+//   let currentIndex = 0;
 
-  function updateSlider() {
-    slider.forEach((card, index) => {
-      card.style.transform = `translateX(-${currentIndex * 100}%)`;
-    });
-  }
+//   function updateSlider() {
+//     slider.forEach((card, index) => {
+//       card.style.transform = `translateX(-${currentIndex * 100}%)`;
+//     });
+//   }
 
-  prevBtn.addEventListener("click", () => {
-    if (currentIndex > 0) {
-      currentIndex--;
-      updateSlider();
-    }
-  });
+//   prevBtn.addEventListener("click", () => {
+//     if (currentIndex > 0) {
+//       currentIndex--;
+//       updateSlider();
+//     }
+//   });
 
-  nextBtn.addEventListener("click", () => {
-    if (currentIndex < slider.length - 1) {
-      currentIndex++;
-      updateSlider();
-    }
-  });
-});
+//   nextBtn.addEventListener("click", () => {
+//     if (currentIndex < slider.length - 1) {
+//       currentIndex++;
+//       updateSlider();
+//     }
+//   });
+// });

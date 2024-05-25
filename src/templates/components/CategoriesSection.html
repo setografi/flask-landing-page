@@ -19,7 +19,6 @@
       <div>
         <button
           class="bg-white text-gray-500 border border-gray-400 py-4 px-4 text-xs font-semibold flex justify-center items-center mr-3 cursor-pointer transform transition duration-300 hover:bg-blue-600 hover:border-blue-600 hover:text-white hover:shadow-xl"
-          id="prevBtn"
         >
           <i data-feather="arrow-left" class="h-4"></i>
         </button>
@@ -27,7 +26,6 @@
       <div>
         <button
           class="bg-white text-gray-500 border border-gray-400 py-4 px-4 text-xs font-semibold flex justify-center items-center cursor-pointer transform transition duration-300 hover:bg-blue-600 hover:border-blue-600 hover:text-white hover:shadow-xl"
-          id="nextBtn"
         >
           <i data-feather="arrow-right" class="h-4"></i>
         </button>
@@ -35,21 +33,30 @@
     </div>
   </section>
 
-  <section
-    class="w-full grid grid-cols-4 gap-5 justify-center md:justify-between w-full slideshow px-6 mt-4 overflow-x-auto"
-  >
-    <!-- category cards -->
-    {% for card in cards %}
-    <div class="w-full h-full card relative" id="slideshow">
-      <img src="{{ card.image }}" alt="{{ card.title }}" />
-      <div class="absolute overlay-text w-full flex flex-col items-center">
-        <p class="text-white text-xl tracking-tight">{{ card.title }}</p>
-        <p class="text-xs text-gray-500 font-semibold uppercase mt-1">
-          {{ card.content }}
-        </p>
+  <section class="flex justify-between slideshow px-6 mt-4">
+    <div class="swiper w-full h-full">
+      <div class="swiper-wrapper">
+        {% for card in cards %}
+        <div class="swiper-slide flex justify-center items-center">
+          <div class="card relative">
+            <img class="w-full" src="{{ card.image }}" alt="{{ card.title }}" />
+            <div
+              class="absolute overlay-text w-full flex flex-col items-center"
+            >
+              <p class="text-white text-xl tracking-tight">{{ card.title }}</p>
+              <p class="text-xs text-gray-500 font-semibold uppercase mt-1">
+                {{ card.content }}
+              </p>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
       </div>
+
+      <div class="swiper-pagination"></div>
+      <!-- <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div> -->
     </div>
-    {% endfor %}
   </section>
 
   <section class="mt-16">
