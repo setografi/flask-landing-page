@@ -1,13 +1,13 @@
 <div class="mt-32" id="categories">
   <section
-    class="w-4/5 mx-auto flex flex-col md:flex-row md:justify-between items-center"
+    class="w-full md:w-4/5 p-8 md:p-0 mx-auto flex flex-col md:flex-row md:justify-between items-center"
   >
     <!-- header and arrow buttons -->
     <div class="w-full md:w-1/5 mr-auto">
       <h2 class="text-3xl font-light">Categories</h2>
       <div class="h-1 bg-gray-300 w-10 mt-2"></div>
     </div>
-    <div class="w-full md:w-1/2">
+    <div class="w-full md:w-1/2 ml-auto">
       <p class="text-sm text-gray-500 font-normal my-4 leading-loose">
         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias
         mollitia enim aliquid debitis, dolor deserunt Nihil in culpa vitae
@@ -38,13 +38,21 @@
       <div class="swiper-wrapper">
         {% for card in cards %}
         <div class="swiper-slide flex justify-center items-center">
-          <div class="card relative">
-            <img class="w-full" src="{{ card.image }}" alt="{{ card.title }}" />
-            <div
-              class="absolute overlay-text w-full flex flex-col items-center"
-            >
-              <p class="text-white text-xl tracking-tight">{{ card.title }}</p>
-              <p class="text-xs text-gray-500 font-semibold uppercase mt-1">
+          <div class="card relative w-full h-64 lg:h-96">
+            <img
+              class="w-full h-full object-cover brightness-50"
+              src="{{ card.image }}"
+              alt="{{ card.title }}"
+            />
+            <div class="absolute bottom-4 w-full flex flex-col items-center">
+              <p
+                class="text-white text-xl md:text-2xl font-semibold tracking-tight"
+              >
+                {{ card.title }}
+              </p>
+              <p
+                class="text-xs md:text-sm text-gray-400 font-semibold uppercase mt-1"
+              >
                 {{ card.content }}
               </p>
             </div>
